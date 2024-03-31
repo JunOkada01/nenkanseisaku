@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+h1,a{
+  margin:30px 0 20px 0px;
+}
+
+
+h2,a {
+  text-align:center;
+  margin: 100px 0 0px 0px;
+}
+
+h4,a {
+  margin: 0px 0 40px 0px;
+  font-weight:normal;
+}
+
+h5,a {
+  margin: 20px 0 0px 0px;
+  font-weight:normal;
+  font-size: 15px
+}
+
+h6,a {
+  color:chartreuse
+}
+
+.logo{
+  margin:0px 0 0 10px;
+  float:left;
+}
+
+.logo img{
+  width:100px;
+}
+
+
+ul.list {
+display: flex;
+justify-content: right;
+list-style: none;
+}
+
+li {
+  padding: 0 0px;
+  margin-top:0PX;
+}
+
+
+span {
+  color: rgb(21, 255, 0);
+}
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+body{
+	background:#eee;
+}
+
+
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	color: #333;
+}
+
+a:hover,
+a:active{
+	text-decoration: none;
+}
+.bottom {
+    transform: rotate( -90deg );
+ }
+/* 基本要素 */
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  
+
+.sinkitouroku{
+        background-color: rgb(0, 0, 0);
+        height:300px;
+        width:300px;
+        position: relative;
+}
+.roguin{
+  background-color: rgb(0, 0, 0);
+  height:300px;
+  width:300px;
+  position: relative;
+} 
+body {
+  background-color: #ffffff;
+}
+
+#header Text{
+  margin:0;
+  padding:0 0 8px 38px;
+  font-size:12px;
+  color: #666;
+}
+
+header{
+  
+  text-align: right;
+}
+
+.radius_test {
+  width: 300px;               /* 幅指定 */
+  height: 200px;              /* 高さ指定 */
+  border: solid 2px #000;     /* 枠線指定 */
+  background-color: #eee;     /* 背景色指定 */
+  border-radius: 10px;        /* 角丸指定 */
+}

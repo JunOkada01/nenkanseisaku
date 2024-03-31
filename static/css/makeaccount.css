@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+h1,a{
+    font-size:20px;
+}
+
+
+h4,a{
+    margin:0px 0 0px 0px
+}
+
+h5,a{
+    font-weight:normal;
+    margin: 0px 0 40px 0px;
+}
+
+h6,a{
+    font-weight:normal;
+    font-size: 10px;
+    margin:10px 0 30px 0px
+}
+
+.service{
+    font-weight:bold;
+    margin:0px 150px 0 0px;
+    font-size:15px;
+}
+
+
+.magazin{
+    margin:0px 140px 0 0px;
+}
+
+.sentcode{
+    margin:20px 0 0 0px;
+}
+
+.setumei{
+    font-size: 5px;
+}
+
+.sonota{
+    margin:0px 0 0 0px;
+}
+
+
+.last{
+    font-size: 10px;
+}
+
+
+.list{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    background-color:white;
+    border:none;
+    padding:0px 0px;
+    margin: 0px 0 0 0px
+
+}
+
+    
+li {
+    padding: 0px 0 0 0px;
+    margin: 0px 0 0 0px
+}
+
+label {
+    display: block;
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+}
+  
+input,
+label {
+margin: 0.4rem 0;
+}
+
+
+
+.mail{
+display: inline-block;
+padding: 1em;
+border: 1px solid #999;
+box-sizing: border-box;
+background: #f2f2f2;
+margin: 0em 0;
+border-radius: 10px;   
+}

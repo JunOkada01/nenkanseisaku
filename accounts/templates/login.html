@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media = "all" href="{% static 'css/login.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/login.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+    <header>
+        <div><a href="../"><img src="{% static 'img/jlogo.jpeg' %}" width="50" height="50" alt="Jmeba"></a></div>
+        <div><a href="../accounts/signup"><img src="{% static 'img/sinkitourokutate.jpeg' %}" text-align:right; class="list"width="100" height="50" alt="Jmeba"></a></div>
+    </header>
+<body>
+    <div style="text-align: center;">
+        <h1>ログインする</h1>
+        
+        <form action="{% url 'signinsent' %}" method="post">
+            {% csrf_token %}
+        <h2>メールアドレスまたはジェメーバIDを入力</h2>
+        <input type="text" class="password" size="50" name="username" id="username" width="100" height="20" required="username">
+        <h2>パスワードを入力</h2>
+        <input type="password" class="password" size="50" name="password" id="password" width="100" height="20" required="password">
+
+
+
+
+
+        <div class="kotira">※ログインができずお困りにの方は<a href="#">こちら</a></div>
+        
+        <input type ="image" value="ログイン" name="submit" class="login" width="150" height="50" src="{% static 'img/login.jpeg' %}" alt=""/>
+        </form>
+        <hr width="300">
+        
+        <div class="service">もしくは外部サービスで登録</div>
+
+
+        <a href="https://auth.user.ameba.jp/signup/email" class="sonota"><img src="{% static 'img/asns.jpeg' %}" width="300" height="300" alt="その他"></a>
+
+        <h6 class="setumei">This site is protected by reCAPTCHA and<br>the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</h6>
+
+        <div class="sitanosonota"> <a href="#">お問い合わせ</a>｜<a href="#">ヘルプ</a>｜<a href="#">利用規約</a></div>
+
+        <hr width="2000">
+
+        <div class="last">☺ Jmeba by Junya
+
+
+            {% if user.is_authenticated %}
+                        <li> <a href="../accounts/signup"><img src="{% static 'img/sinkitourokutate.jpeg' %}" width="100" height="50" alt="新規登録ボタン"></a></li>
+                        <li> <a href="../accounts/signin"><img src="{% static 'img/roguintate.jpeg' %}" width="100" height="50" alt="ログインボタン"></a></li>
+                    {% else %}
+                        <li><a href="#">post</a></li>
+                        <li><a href="../accounts/signout">post</a></li>
+                    {% endif %}
+
+
+
+
+
+    </div>
+
+    <div>
+        
+
+
+
+
+    </div>
+</body>
+
+</html>

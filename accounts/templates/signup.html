@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media = "all" href="{% static 'css/makeaccount.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メールアドレスで登録 | Jmeba</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    {% load static %}
+    <header>
+        <ul class="list">
+            <li> <a href="../accounts/signin"><img src="{% static 'img/login.jpeg' %}" width="100" height="50" alt="ログインボタン"></a></li>
+        </ul>
+    </header>
+    <div style="text-align: center;"><a href="index.html"><img src="{% static 'img/jlogo.jpeg' %}" width="50" height="50" alt="Jmeba"></a>
+
+
+        <h1>メールアドレスで登録</h1>
+        <h5>入力されたメールアドレスに認証コードは届きません。</h5>
+        <h4>メールアドレスを入力しても意味はありません</h4>
+
+        <!-- ここ -->
+        <form action="{% url 'signupsent' %}" method="post">
+        <dl>
+            {% csrf_token %}
+            <dd><input type="text" size="50" name="username" id="username" placeholder="Jmeba-jun@example.com" width="100" height="20" required></dd>
+            <dd><input type="password" size="50" name="password" id="password" placeholder="password" width="100" height="20" required></dd>
+        </dl>
+        <!-- ここ -->
+
+        <!-- <div class="magazin">
+        <input type="checkbox" id="scales" name="scales">メールマガジンを受け取る
+        </div> -->
+        
+        <input style="text-align: center;" type ="image" value="サインアップ" name="submit" class="login" width="200" height="75" src="{% static 'img/sinkitourokutate.jpeg' %}" alt="sentcode"/>
+        </form>
+        <h6 class="setumei">認証コードを送るボタンを押すと<a href="#">Ameba利用規約</a>と<a href="#">プライバ<br>シーポリシー</a>の内容をお読みになった上で同意した事になりま<br>す。</h6>
+
+        <hr width="300">
+        
+        <div class="service">もしくは外部サービスで登録</div>
+
+
+        <a href="https://auth.user.ameba.jp/signup/email" class="sonota"><img src="{% static 'img/asns.jpeg' %}" width="300" height="300" alt="その他"></a>
+
+
+        <h6 class="setumei">外部サービスをご利用の場合、<a href="#">Ameba利用規約</a>と<a href="#">プライバシ<br>ーポリシー</a>の内容をお読みになった上で同意した事になります</h6>
+
+
+        <h6 class="setumei">This site is protected by reCAPTCHA and<br>the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</h6>
+
+        <div class="sitanosonota"> <a href="#">お問い合わせ</a>｜<a href="#">ヘルプ</a>｜<a href="#">利用規約</a></div>
+
+        <hr width="2000">
+
+        <div class="last">☺ Jmeba by Junya
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+h1,a{
+    margin:0px 0 0 0px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between; /* 子要素の間に均等なスペースを追加 */
+    align-items: center; /* 子要素を垂直方向に中央揃え */
+}
+
+.list {
+    margin-left: 10px; /* 余白を追加する代わりに左側のマージンを調整 */
+}
+
+.sonota {
+    margin: 0; /* 余白を削除 */
+}
+
+
+
+
+
+/* 
+header{
+    display:flex;
+}
+  */
+header div{
+    display:flex;
+ 
+}
+
+/* .list{
+    margin:0px 0 0 1000px;
+} */
+
+
+
+.mail {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin: 0em 0;
+    border-radius: 10px;
+}
+
+.password {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin: 0em 0;
+    border-radius: 10px;
+}
+.username {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin: 0em 0;
+    border-radius: 10px;
+}
+
+
+.setumei{
+    font-size: 5px;
+}
+
+/* .sonota{
+    margin:0px 0 0 0px;
+} */
+
+
